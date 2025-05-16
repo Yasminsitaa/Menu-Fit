@@ -11,22 +11,19 @@
   <body>
     <!--NAVBAR-->
     <nav
-      class="bg-gray-50 fixed w-full z-20 top-0 start-0 border-b border-gray-200"
+      class="bg-gray-50 fixed w-full z-50 top-0 start-0 border-b border-gray-200"
     >
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <a
-          href="index.html"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+        <a href="index.html" class="flex items-center space-x-3">
           <img src="logo.png" class="h-8" alt="Logo" />
           <span
             class="self-center text-emerald-700 text-2xl font-semibold whitespace-nowrap"
             >MenuFit</span
           >
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div class="flex md:order-2 space-x-3 md:space-x-0">
           <button
             type="button"
             class="text-white bg-emerald-700 hover:bg-emerald-800 font-medium rounded-lg text-sm px-4 py-2 text-center"
@@ -36,7 +33,7 @@
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -63,7 +60,7 @@
           id="navbar-sticky"
         >
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-gray-50"
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-gray-50"
           >
             <li>
               <a
@@ -98,7 +95,7 @@
         <!--Texto-->
         <div class="flex flex-col justify-center flex-1 px-4 md:px-9">
           <h1
-            class="font-nunito text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-emerald-700"
+            class="font-nunito sm:text-8xl md:text-7xl lg:text-6xl text-emerald-700"
           >
             Descubri recetas <br />
             saludables y deliciosas
@@ -283,18 +280,20 @@
           Dietas Destacadas
         </h1>
         <!--Cards-->
-        <div class="grid grid-cols-4 w-fit mx-auto mt-10 gap-x-10">
+        <div
+          class="grid mx-auto mt-10 sm:grid-cols-2 sm:gap-y-10 sm:gap-x-10 lg:grid-cols-4 lg:gap-x-10 lg:w-full lg:px-30"
+        >
           <div
-            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg overflow-hidden px-20"
+            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg sm:h-50 overflow-hidden px-4"
           >
             <img src="iconos/vegano.png" alt="" class="mx-auto mt-4" />
             <h1
-              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-xl"
+              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-2xl"
             >
               Vegana
             </h1>
             <h1
-              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-xl lg:text-base"
+              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-2xl lg:text-xl"
             >
               Recetas a base de <br />
               plantas
@@ -302,52 +301,144 @@
           </div>
 
           <div
-            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg overflow-hidden px-4"
+            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg sm:h-50 overflow-hidden px-4"
           >
             <img src="iconos/keto.png" alt="" class="mx-auto mt-4" />
             <h1
-              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-xl"
+              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-2xl"
             >
               Keto
             </h1>
             <h1
-              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-xl lg:text-base"
+              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-2xl lg:text-xl"
             >
               Comidas bajas <br />
               en carbohidratos
             </h1>
           </div>
           <div
-            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg overflow-hidden px-4"
+            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg sm:h-50 overflow-hidden px-4"
           >
             <img src="iconos/carnivora.png" alt="" class="mx-auto mt-4" />
             <h1
-              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-xl"
+              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-2xl"
             >
               Carnivora
             </h1>
             <h1
-              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-xl lg:text-base"
+              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-2xl lg:text-xl"
             >
               Recetas basadas <br />
               en proteinas animales
             </h1>
           </div>
           <div
-            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg overflow-hidden px-4"
+            class="bg-emerald-100 rounded-lg h-40 w-full max-w-md sm:max-w-lg sm:h-50 overflow-hidden px-4"
           >
             <img src="iconos/sintacc.png" alt="" class="mx-auto mt-4" />
             <h1
-              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-xl"
+              class="font-nunito text-center mt-2 text-emerald-700 sm:text-3xl md:text-2xl lg:text-2xl"
             >
               Sin TACC
             </h1>
             <h1
-              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-xl lg:text-base"
+              class="py-4 text-center font-nunito text-stone-900 sm:text-2xl md:text-2xl lg:text-xl"
             >
               Alimentacion <br />
               libre de gluten
             </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--RECETAS POPULARES-->
+    <section class="bg-gray-100 p-8 px-8 flex flex-col md:flex-row">
+      <div class="flex flex-col justify-center flex-1 px-4 md:px-9">
+        <h1
+          class="font-nunito text-center sm:text-6xl md:text-5xl lg:text-4xl text-emerald-700"
+        >
+          Recetas Populares
+        </h1>
+        <!--CARDS-->
+        <div
+          class="grid mx-auto mt-10 sm:grid-cols-1 sm:gap-y-10 sm:gap-x-10 lg:grid-cols-3 lg:gap-x-10 lg:w-full lg:px-30"
+        >
+          <div
+            class="max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-xl hover:scale-103"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="recetas/hamburguesa.png" alt="" />
+            </a>
+            <div class="p-5">
+              <div class="mb-4 mt-1">
+                <span
+                  class="bg-emerald-100 text-emerald-700 rounded-full px-2 py-1 text-sm"
+                  >Vegana</span
+                >
+                <span class="text-sm text-gray-400 ml-1">30 mins</span>
+              </div>
+
+              <a href="#">
+                <h5 class="mb-2 text-2xl tracking-tight text-gray-900">
+                  Hamburguesa de Garbanzos
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500">
+                Un plato nutritivo y versatil con proteina vegana
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-xl hover:scale-103"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="recetas/salmon.png" alt="" />
+            </a>
+            <div class="p-5">
+              <div class="mb-4 mt-1">
+                <span
+                  class="bg-emerald-100 text-emerald-700 rounded-full px-2 py-1 text-sm"
+                  >Keto</span
+                >
+                <span class="text-sm text-gray-400 ml-1">25 mins</span>
+              </div>
+
+              <a href="#">
+                <h5 class="mb-2 text-2xl tracking-tight text-gray-900">
+                  Salmon grillado con Esparragos
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500">
+                Salmon rico en vitaminas con vegetales
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="max-w-sm bg-gray-50 border border-gray-200 rounded-lg shadow-xl hover:scale-103"
+          >
+            <a href="#">
+              <img class="rounded-t-lg" src="recetas/smoothie.png" alt="" />
+            </a>
+            <div class="p-5">
+              <div class="mb-4 mt-1">
+                <span
+                  class="bg-emerald-100 text-emerald-700 rounded-full px-2 py-1 text-sm"
+                  >Sin TACC</span
+                >
+                <span class="text-sm text-gray-400 ml-1">15 mins</span>
+              </div>
+
+              <a href="#">
+                <h5 class="mb-2 text-2xl tracking-tight text-gray-900">
+                  Frutilla Smoothie Bowl
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-500">
+                Un desayuno antioxidante
+              </p>
+            </div>
           </div>
         </div>
       </div>

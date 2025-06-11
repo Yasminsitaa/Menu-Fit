@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav
+      class="bg-gray-50 fixed w-full z-50 top-0 start-0 border-b border-gray-200"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="index.html" class="flex items-center space-x-3">
+          <img src="logo.png" class="h-8" alt="Logo" />
+          <span
+            class="self-center text-emerald-700 text-2xl font-semibold whitespace-nowrap"
+            >MenuFit</span
+          >
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0">
+          <a
+            href="contacto.html"
+            class="text-white bg-emerald-700 hover:bg-emerald-800 font-medium rounded-lg text-sm px-4 py-2 text-center"
+          >
+            Contacto
+          </a>
+
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-gray-50"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-emerald-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-950 md:p-0"
+                aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-emerald-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-950 md:p-0"
+                >Recetas</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-emerald-700 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-emerald-950 md:p-0"
+                >Planes de Comida</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Contactanos-->
+    <section class="mt-16 bg-gray-100 p-8 px-8 flex flex-col md:flex-row gap-6">
+      <div class="items-start grid grid-cols-2 gap-x-60">
+        <div class="ml-20">
+          <h1
+            class="text-emerald-700 font-nunito sm:text-7xl md:text-6xl lg:text-5xl"
+          >
+            Contactanos
+          </h1>
+          <p
+            class="font-nunito text-base sm:text-lg md:text-xl mt-5 text-stone-900"
+          >
+            ¡Contáctanos hoy mismo! Estamos aquí para ayudarte con cualquier
+            consulta o idea que desees compartir
+          </p>
+          <div class="text-center mt-30">
+            <a
+              href="https://wa.me/1131045386?text=Hola!"
+              target="_blank"
+              class="text-emerald-700 border-2 border-emerald-700 bg-white hover:bg-emerald-800 hover:text-white font-medium rounded-full text-base px-8 py-4 text-center"
+              >Contactar por WhatsApp</a
+            >
+          </div>
+        </div>
+        <img src="contactos/contactanos.jpg" alt="" class="rounded-2xl ml-5" />
+      </div>
+    </section>
+
+    <!--Formulario-->
+    <section class="bg-gray-50 p-8 px-8">
+      <h1
+        class="ml-50 font-nunito text-emerald-700 sm:text-3xl md:text-2xl lg:text-3xl mb-4"
+      >
+        Estamos aca para ayudarte
+      </h1>
+      <div class="items-start grid grid-cols-2 gap-x-30">
+        <!--Form-->
+        <div class="ml-50 flex flex-col space-y-4">
+          <div>
+            <form
+              action="https://formspree.io/f/manjoqar"
+              method="POST"
+              class="flex flex-col space-y-4"
+            >
+              <label class="flex flex-col">
+                Mail:
+                <input type="email" name="email" class="border-1" required />
+              </label>
+              <label class="flex flex-col">
+                Mensaje:
+                <textarea name="message" class="border-1" required></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button
+                type="submit"
+                class="bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-2 rounded font-nunito"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="font-nunito items-center flex flex-col">
+          <img
+            src="contactos/contactoDirecto.png"
+            alt=""
+            class="rounded-full mb-4"
+          />
+          <h1 class="sm:text-3xl md:text-2xl lg:text-xl mb-2 text-emerald-700">
+            Contacto Directo
+          </h1>
+          <div class="text-base text-stone-900">
+            <p class="mb-1">menufit@gmail.com</p>
+            <p>+54 1130986741</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-gray-50">
+      <div class="bg-emerald-700 w-full h-15"></div>
+
+      <div
+        class="bg-gray-50 grid mx-auto mt-5 sm:px-6 sm:grid-cols-1 sm:gap-y-20 lg:grid-cols-2 lg:gap-x-20 lg:w-full lg:max-w-4xl lg:px-8 place-items-center"
+      >
+        <!-- Menu Fit -->
+        <div class="max-w-sm h-full">
+          <div class="flex flex-wrap items-center justify-normal mb-4">
+            <img src="logo.png" class="h-7" alt="Logo" />
+            <span
+              class="self-center text-emerald-700 text-2xl font-semibold p-2"
+              >MenuFit</span
+            >
+          </div>
+          <p class="font-normal text-gray-500">
+            Tu guia semanal para comidas saludables.
+          </p>
+        </div>
+
+        <!-- Visitanos -->
+        <div class="max-w-sm ml-10 h-full mb-5">
+          <h1 class="text-emerald-700 text-xl mb-2">Visitanos</h1>
+          <div class="w-full h-64 sm:h-80 lg:w-[500px] lg:h-[250px]">
+            <iframe
+              class="w-full h-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.164493847678!2d-58.73866570889973!3d-34.67260127007385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbff70c474af3%3A0x9d4a880084bc3444!2sDietetica%20Merlo!5e0!3m2!1sen!2sar!4v1747868247626!5m2!1sen!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-200 w-full h-1"></div>
+      <div>
+        <h1 class="text-center mt-5 mb-5 text-gray-500 sm:text-sm">
+          © 2025 MenúFit. Todos los derechos reservados.
+        </h1>
+      </div>
+    </section>
+  </body>
+</html>
